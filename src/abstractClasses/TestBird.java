@@ -9,7 +9,7 @@ class TestBird {
 		myBird.label();
 		myBird.move();
 		myBird.eat();
-
+		myBird.MakeSound();
 	}
 
 }
