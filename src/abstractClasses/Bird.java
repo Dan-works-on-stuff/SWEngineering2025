@@ -1,7 +1,9 @@
 package abstractClasses;
 
 class Bird extends Animal {
-		
+
+		Bird(){super("Bird");}
+
 		@Override
 		void move() {
 				 System.out.println("Moves by flying.");
