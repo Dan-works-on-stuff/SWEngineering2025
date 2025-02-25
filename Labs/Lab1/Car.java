@@ -11,9 +11,10 @@ abstract class Car implements vehicle {
     @Override
     public void stats() { System.out.println("This car has: "); } // metoda asta este accesibila fara instantiere
     final void siguranta() { System.out.println("-masina este testata si aprobata in concordanta cu standardele de siguranta UE;"); } //metoda asta e finala+> nu poate fi suprascrisa
-    abstract void acceleration();
-    abstract void top_speed();
-    void engine_type() { System.out.println("This car has an engine"); }
+    abstract void acceleration(double accel);
+    abstract void top_speed(int top_speed);
+    void engine_type(int cilinders) { System.out.println("This car has an engine"); }
+    void engine_type(double liters) { System.out.println("This car has a"+ liters + " engine"); }
     // concrete method
 
     @Override
