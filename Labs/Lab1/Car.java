@@ -14,7 +14,7 @@ abstract class Car implements vehicle {
     abstract void acceleration(double accel);
     abstract void top_speed(int top_speed);
     void engine_type(int cilinders) { System.out.println("This car has an engine"); }
-    void engine_type(double liters) { System.out.println("This car has a"+ liters + " engine"); }
+    void engine_type(double liters) { System.out.println("This car has a "+ liters + "l engine"); }
     // concrete method
 
     @Override
